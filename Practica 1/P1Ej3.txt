@@ -1,0 +1,110 @@
+3.a)
+<a href="http://www.google.com.ar">Click aquí para ir a Google</a>
+	Hipeviculo que muestra "Clic aquí para ir a Google" y lleva a Google.com.ar en la misma página, reemplazando la actual
+<a href="http://www.google.com.ar" target="_blank">Clic aquí para ir a Google</a>
+	Muestra y hace lo mismo que el punto anterior pero el atributo target="_blank" abre el sitio en una nueva página
+<a href="http://www. google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help">
+	Mismo hipervinculo que los anteriores, no tiene texto por lo que no habría nada visualmente.
+	type="text/html" indica que el recurso es en una pagina HTML
+	hreflang="es" indica que el texto esta en idioma español
+	charset="utf-8" indica la codificación de los caracteres
+	rel="help" indica que el enlace está relacionado con ayuda
+<a href="#">Click aquí para ir a Google</a>
+	Texto que aparece como hipervínculo que al hacer clic redirige a la misma pagina
+<a href="#arriba">Clic aquí para volver arriba</a>
+	Hipervinculo que al hacer clic lleva al elemento con la etiqueta "arriba"
+<a name="arriba" id="arriba"></a>
+	Elemento con definido como "arriba", al hacer clic en un hipervínculo con el atributo de
+	name="arriba" lleva a este sitio
+
+3.b)
+<p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p>
+	Dentro de la etiqueta párrafo <p></p> se muestra la imagen "im1.jpg" seguida de un hipervínculo que muestra "Click aquí" que
+	lleva a Google.com.ar dentro de la misma página. En caso de no poder visualizar la imagen, se mostrará el texto "imagen1"
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p>
+	Dentro de la etiqueta párrafo se visualiza la imagen "im1.jpg" con la alternativa de "imagen1" como texto en caso de no ser
+	visualizable y un texto "Click aquí". Se define el atributo href="http://www.google.com.ar", pero como el texto de
+	"Click aquí" está fuera de la etiqueta hipervínculo <a></a> no redirigiría a ningún lado
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" />Click aquí</a></p>
+	Visualmente igual al caso anterior solo que tanto la imagen mostrada como el texto "click aquí" forman parte del enlace,
+	al hacer click en cualquiera de ellos, se redirigiría  www.google.com.ar
+<p>
+	<a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> 
+	<a href="http://www.google.com.ar">Click aquí</a>
+</p>
+	Dentro de la etiquieta párrafo se muestran dos hipervínculos independientes, el primero siendo visible como
+	la imagen "im1.jpg" y el segundo como el texto "Click aquí". Ambos redirigen a la misma página pero son independientes
+
+3.c)
+<ul>
+<li>xxx</li>
+<li>yyy</li>
+<li>zzz</li>
+</ul>
+Lista no ordenada con 3 elementos, siendo estos: xxx, yyy, zzz
+
+<ol>
+<li>xxx</li>
+<li>yyy</li>
+<li>zzz</li>
+</ol>
+Lista ordenada con 3 elementos, siendo estos: xxx, yyy, zzz
+
+<ol>
+<li>xxx</li>
+</ol>
+<ol>
+<li value="2">yyy</li>
+</ol>
+<ol>
+<li
+value="3">zzz</li>
+</ol>
+	3 listas ordenadas con un único elemento, el primer bloque muestra el elemento xxx, el segundo
+	el yyy que, a pesar de ser el único elemento de la lista aparecerá enumerado con un 2 debido al atributo value="2",
+	lo mismo pasa con el tercer bloque con elemento zzz y aparecerá enumerado con un 3 a pesar de ser el único elemento.
+	Su visualización será como:
+		1. xxx
+		2. yyy
+		3. zzz
+
+<blockquote>
+<p>1. xxx<br />
+2. yyy<br />
+3. zzz</p>
+</blockquote>
+	Muestra un texto con forma de "lista" realizada con la etiqueta <br> para realizar saltos de línea.	
+	Todo este texto tiene sangría debido a que todo el contenido de la etiqueta párrafo <p> está dentro de la etiqueta <blockquote>
+
+
+3.d) Son dos tablas, la primera con un grosor de línea 1 debido al atributo border="1" y 
+un ancho de 300 por el atributo width="300". Compuesta por dos columnas siendo estas "columna 1" y "columna 2" delimitdas por la etiqueta <th> como header de fila.
+Dentro de la primer fila se encuentran los datos de las celdas "celda 1" y "celda 2" definidos por las etiquetas de celdas <td> dentro de la primer etiqueta de fila <tr>.
+Luego salta a la próxima fila con otra etiqueta de fila <tr> con dos celdas, 3 y 4 con sus dos respectivas etiquetas de celda <td>.
+	La segunda es una tabla de 3 filas con grosor de línea 1 y ancho 300, la primer fila tiene dos celdas, cada una con su contenido alineado al centro y en negrita. La segunda fila posee dos celdas, Celda 1 y Celda 2 y la tercer fila posee dos celdas, Celda 3 y Celda 4.
+	El alineado en la primer fila está hecho con el atributo align y el texto está en negrita por la etiqueta <strong>
+
+3.e) Ambas tablas cuentan con el mismo ancho por el atributo width="200", ambas muestran un Titulo, la primera utilizando la etiqueta <caption>Titulo</caption> y la segunda utilizando la primer fila de la tabla con las 3 celdas "fusionadas" por el atributo coldspan="3" y el texto alineado al centro con el atributo align="center.
+	Visualmente cuentan con dos filas y 3 celdas cada una, ambas tablas tienen el color de fondo de las celdas establecido por el atributo bgcolor dentro de cada etiqueta de celda <td></td> mostrando un espacio vacío pero visible por el código &nbsp.
+
+3.f) Ambas tablas cuentan con el mismo ancho por el atributo width="200" y 3 filas cada una. Ambas definen un titulo utilizando la primer fila con el texto alineado al centro y "fusionando" las 3 celdas en una con el atributo colspan.
+	En la primer tabla, su segunda fila en el código (pero primer fila visualmente) cuenta con 3 celdas, donde la primera está fusionada con la celda de la fila inferior mediante el atributo rowspan="2" mientras que en la segunda la primer fila visible cuenta con 3 celdas, donde la primera está fusionada con la celda a su derecha mediante el atributo colspan="2".
+	En la primer tabla, la segunda fila visible cuenta con 3 celdas, la primera fusionada vericalmente con la superior y en la segunda tabla  hay 3 celdas iguales.
+	Todas las celdas de ambas tablas tienen el mismo color definido por el atributo bgcolor y están vacías pero visibles por el código &nbsp.
+
+3.g) Dos tablas del mismo ancho y grosor de borde, pero la segunda tiene una separación de celdas de 0 por su atributo cellpadding="0" y un espacio entre el contenido de la celda y el borde de la misma de 0 por el atributo cellspacin="0", como en ambos el valor es 0 no afecta visualmente el contenido y en ese sentido ambas tablas se verían igual.
+En la primer tabla se vería únicamente una gran celda vacía, ya que en el código las 2 celdas de la primer fila estarían unidas por el colspan="2" y a su vez estas estarían unidas con la celda inferior por el atributo rowspan="2".
+	La segunda tabla cuenta con dos celdas en la primer fila, donde la primera está unida verticalmente con la única celda de la fila que hay debajo.
+	Todas las celdas están sin contenido pero visibles debido al código &nbsp.
+
+3.h) 3 fomrularios, el primero con el nombre "form1" que enviará los datos a procesar.php mediante el atributo action. El formulario tendrá un titulo "login" determinado por la etiqueta <legend></legend> dentro de la etiqueta de datos del campo <fieldset></fieldset>. Los datos a ingresar son Usuario y Clave donde el primero es del tipo texto con un valor visual predeterminado de "xxx" y el segundo campo es el de clave, de tipo contraseña con el valor predetrimnado "xxx" que se visualizará "***" debido a que el tipo está definido como type="password". Por último, fuera de la etiqueta <fieldset> pero dentro de la etiqueta formulario <form> hay un botón con la leyenda "enviar".
+	El segundo formulario visualmente es idéntico pero con el método "get", con el titulo Login pero esta vez hecho con Texto y un salto de línea y los dos campos Usuario y Clave están dentro de etiquetas <label></label> y no el fieldset, lo que hará que los datos a ingresar se vean similares pero no estarán dentro de un recuadro que abarque todo el formulario. El botón de enviar es el mismo en ambos casos.
+	El tercer formulario envía los datos a un correo mediante el atributo action="mailto@xx.com", los datos a ingresar se definen de la misma forma que en el primer formulario.
+
+3.i) Dos etiquetas, la primera tiene un botón dentro de la misma que es a su vez es una imagen seguida de un texto "Click aquí" puesto justo debajo, tanto la etiqueta de imagen <img> y el texto están dentro de la etiqueta del botón <button>.
+	La segunda etiqueta posee un texto "Botón 2" al inicio y un input del tipo botón (type="button") con un texto de "click aquí".
+
+3.j) Ambos párrafos son iguales, muestran dos opciones a elegir siendo en ambos casos X e Y, cada opción es un input del tipo radio con el valor X e Y respectivamente. Cada opción está dentro de una etiqueta <label></label> seguidas de un salto de línea.
+
+3.k) Listas con opciones divididas en dos grupos, "caso 1" y "caso 2" con mayo y junio como opciones de ambos grupos. La diferencia es que la segunda lista al contar con el atributo multiple="multiple" permite al usuario seleccionar más de una opción a la vez.
+	
