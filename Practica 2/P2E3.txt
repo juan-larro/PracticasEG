@@ -1,0 +1,41 @@
+Ejercicio 3)
+.css
+	p.quitar {
+	color: red;
+	}
+	*.desarrollo {
+	font-size: 8px;
+	}
+	.importante {
+	font-size: 20px;
+	}
+.html
+	<p class="desarrollo">
+		En este primer párrafo trataremos lo siguiente:
+		<br />xxxxxxxxxxxxxxxxxxxxxxxxx
+	</p>
+	Mostrará un párrafo al que se le aplica el estilo correspondiente al definido a la 	clase "desarrollo" en la hoja de estilo mediante un selector de clase. En este caso 	el texto tendrá un tamaño de fuente de 8 píxeles.
+
+	<p class="quitar">
+		Este párrafo debe ser quitado de la obra…
+		<br />xxxxxxxxxxxxxxxxxxxxxxxxx
+	</p>
+	Párrafo que se le aplicará el estilo definido en el .css como p.quitar{} el cual 	hará 	efecto en todos los párrafos con la clase quitar, este se aplica mediante 	un selector 	de clase y el efecto que tendrá es volver rojo el color de la 	fuente.
+
+	<p >
+		En este otro párrafo trataremos otro tema:<br />
+		xxxxxxxxxxxxxxxxxxxxxxxxx
+	</p>
+	No se le aplica ninguna regla de estilo al párrafo ya que no cuenta con ninguna de 	las 3 clases definidas.
+
+	<p class="importante">
+		Y este es el párrafo más importante de la obra…
+		<br />xxxxxxxxxxxxxxxxxxxxxxxxx
+	</ p>
+		Mediante selector de clase se le aplica el estilo definido en el .css para 	los elementos con clase "importante", en este caso se le aplica al párrafo un 	tamaño de fuente de 20 píxeles.
+		
+	<h1 class="quitar">Este encabezado también debe ser quitado de la obra</h1>
+	No le aplica ningún estilo, ya que el definido para las etiquetas con clase 	"quitar" solo hace efecto en párrafos
+
+	<p class="quitar importante">Se pueden aplicar varias clases a la vez </p>
+	No hace efecto ningún estilo del .css ya que establece la clase del <p> coomo 	"quitar importante" pero en el css ninguna tiene esta denominación.

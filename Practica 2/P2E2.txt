@@ -1,0 +1,12 @@
+Ejercicio 2.
+p#normal{}: Establece con selector de clase a los párrafos con id "normal"  dos fuentes
+disponibles, arial y helvética. También establece le tamaño de la fuente a 11 píxeles y muestra el texto en negrita, separando estas propiedades por punto y coma.
+
+*#destacado{}: Con * utiliza el selector universal, para cualquier elemento HTML que tenga el id="destacado", establece que el borde será una línea continua de color azul con un ancho de 2 píxeles, separando estas propiedades por punto y coma.
+
+#distinto {}: Al elemento HTML con id="distinto" le aplicará un color de fondo y un color de fuente rojo, separando estas propiedades por punto y coma.
+<p id="normal">Este es un párrafo</p>
+<p id="destacado">Este es otro párrafo</p>
+<table id="destacado"><tr><td>Esta es una tabla</td></tr></table>
+<p id="distinto">Este es el último párrafo</p>	
+	Le establece a todas estas etiquetas un id en el .HTML, cada una aplicará los estilos 	correspondientes a cada estilo definido para cada clase en el .css

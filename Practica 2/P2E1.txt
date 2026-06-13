@@ -1,0 +1,23 @@
+1. ¿ Qué es CSS y para qué se usa?
+	CSS son las siglas de hojas de estilo en cascada. Es una tecnología que permite 	cambiar la apariencia de una página web de forma más ordenada 	y cómoda para el programador.
+
+2. CSS utiliza reglas para las declaraciones de estilo, ¿cómo funcionan?
+	Los distintos selectores a los que se les darán estilo pueden estar agrupados, 	pero 	separándolos por coma.
+	Las propiedades aplicadas a un mismo selector pueden agruparse, pero se separan por 	punto y coma.
+
+3. ¿ Cuáles son las tres formas de dar estilo a un documento?
+	Se puede dar estilo directamente a la marca, en el head de la página o agrupar las 	reglas de estilo en un archivo independiente .css
+
+4. ¿ Cuáles son los distintos tipos de selectores más utilizados?
+Ejemplifique cada uno.
+	Los selectores más usados son los de Etiqueta, que selecciona todos los elementos HTML que coincidan con el nombre de la etiqueta. Ejemplo p {color: red;] afecta a todos los párrafos.	
+	El selector de Clase selecciona a todos los elementos con el  mismo atributo class. Ejemplo .clase1 {color: red}; aplica el color rojo a todas las etiquetas con class="clase1".
+
+5. ¿ Qué es una pseudo-clase? Cuáles son las más utilizadas aplicadas a vínculos?
+	Palabra calve que se añade a un selector en CSS para establecer el estilo de un 	elemento cuando el mismo cumple una condición en particular. Para los vínculos se 	suele utilizar el :visited (ciando ya ha visitado el sitio), :hover(Se activa cuando 	el cursor está sobre el vínculo) y el :active (ocurre en el momento en el que se da 	click al vinculo)
+
+6. ¿ Qué es la herencia?
+	En CSS la herencia permite aplicarle el estilo del elemento padre a los elementos 	
+hijos del mismo, cosa que permite evitar repetir el código en elementos similares.
+7. ¿ En qué consiste el proceso denominado cascada?
+	Algoritmo utilizado para ver determinar uno de los varios estilos que compiten en un 	mismo momento para ser aplicados en un elemento. Es un filtrado secuencial que 	selecciona el estilo que corresponda.
