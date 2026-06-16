@@ -1,0 +1,75 @@
+<!--2) Crear la estructura básica de un sitio web como se muestra en el ejemplo siguiente. La
+barra lateral (sidebar) deberá tener un tamaño de 3, al igual que los 6 rectángulos del
+centro del diseño. El rectángulo celeste de la esquina inferior derecha deberá tener un
+tamaño de 6. Utilizar el segundo mockup para el tamaño sm.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica Bootstrap</title>
+
+    <!-- Instalo Bootstrap usando CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Mi CSS en caso de necesitar una hoja de estilo -->
+    <link rel="stylesheet" href="estilo.css"> 
+</head>
+<header>
+    <div class="container">
+       <div class="row">
+         <div id="encabezado" class="col-12">
+            Header
+        </div>  
+       </div>
+    </div>
+</header>
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="sidebar" class="col-3">
+                Sidebar
+            </div>
+            <div id="columna-2" class="col-9">
+                <div class="row">
+                    <div id="contenido" class="col-12">
+                        Contenido
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3 celda">
+                        1
+                    </div>
+                    <div class="col-3 celda">
+                        2
+                    </div>
+                    <div class="col-3 celda">
+                        3
+                    </div>
+                    <div class="col-3 d-none"></div>
+                </div>
+                <div class="row">
+                    <div class="col-3 celda">
+                        4
+                    </div>
+                    <div class="col-3 celda">
+                        5
+                    </div>
+                    <div class="col-3 celda">
+                        6
+                    </div>
+                    <div class="col-3 d-none"></div>
+                <div class="row">
+                    <div class="col-3">
+                        Inferior Izquiera
+                    </div>
+                    <div class="col-3 d-none"></div>
+                    <div class="col-9">
+                        Inferior Derecha
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
